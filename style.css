@@ -1,15 +1,22 @@
 body {
-    font-family: "Courier";
+    font-family: "Commissioner", sans-serif;
     letter-spacing: 2px;
-    text-align: center;
+    /* text-align: center; */
     box-sizing: border-box;
     margin: 0;
+    color: #58697e
 }
 
-.nav {
-    background-color: #abc123;
+nav {
+    background-color: #58697e;
     color: #ffffff;
-    height: 25vh;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+ul {
     padding-left: 30%;
     display: flex;
     flex-wrap: wrap;
@@ -30,22 +37,57 @@ li:hover {
     border: solid 3px #ffffff;
     border-radius: 300px;
     background-color: white;
-    color: #abc123;
+    color: #58697e;
 }
 
 h1, h2 {
-    color: #abc123;
+    color: #58697e;
+    font-family: "Fraunces", serif;
 }
 
-h2 {
-    cursor: pointer;
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.headshot {
+    height: 60vh;
 }
 
 .paragraph {
-    background-color: #abc123;
     margin: auto;
+    width: 30vw;
+    padding: 20px 0;
+}
+
+.footer {
+    background-color: #58697e;
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
     color: #ffffff;
-    width: fit-content;
-    padding: 20px;
-    border-radius: 5px;
+    padding-left: .5vw;
+}
+
+.footer ul li {
+    padding: 0;
+}
+
+li img {
+    height: 4vh;
+    padding: 0 0.5vw;
+}
+
+.footer ul li:hover {
+    border: 0;
+    background: none;
 }
