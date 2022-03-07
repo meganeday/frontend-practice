@@ -1,0 +1,23 @@
+body {
+    font-family: "Courier";
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #abc123;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.paragraph {
+    background-color: #abc123;
+    margin: auto;
+    color: #ffffff;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    line-height-step: 10px;
+}
