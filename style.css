@@ -91,3 +91,13 @@ li img {
     border: 0;
     background: none;
 }
+
+a {
+    font-family: 'Commissioner', serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #58697e;
+}
