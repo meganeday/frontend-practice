@@ -1,14 +1,17 @@
-body {
+$dark-color: #58697e;
+$serif-font: 'Fraunces', serif;
+$sans-font: 'Commissioner', 'sans-serif';
+
+*{
     font-family: "Commissioner", sans-serif;
     letter-spacing: 2px;
-    /* text-align: center; */
     box-sizing: border-box;
     margin: 0;
-    color: #58697e
+    color: $dark-color;
 }
 
 nav {
-    background-color: #58697e;
+    background-color: $dark-color;
     color: #ffffff;
     height: 15vh;
     display: flex;
@@ -42,7 +45,7 @@ li:hover {
 
 h1, h2 {
     color: #58697e;
-    font-family: "Fraunces", serif;
+    font-family: $sans-font;
 }
 
 .wrapper {
