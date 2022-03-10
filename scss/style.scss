@@ -1,10 +1,8 @@
-$dark-color: #58697e;
-$serif-font: 'Fraunces', serif;
-$sans-font: 'Commissioner', 'sans-serif';
+@import 'variables';
 
 *{
-    font-family: "Commissioner", sans-serif;
-    letter-spacing: 2px;
+    font-family: $sans-font;
+    letter-spacing: 0.125rem;
     box-sizing: border-box;
     margin: 0;
     color: $dark-color;
@@ -12,7 +10,7 @@ $sans-font: 'Commissioner', 'sans-serif';
 
 nav {
     background-color: $dark-color;
-    color: #ffffff;
+    color: $white;
     height: 15vh;
     display: flex;
     justify-content: space-between;
@@ -33,18 +31,10 @@ li {
     text-transform: uppercase;
     cursor: pointer;
     align-items: center;
-    padding: 10px;
-}
-
-li:hover {
-    border: solid 3px #ffffff;
-    border-radius: 300px;
-    background-color: white;
-    color: #58697e;
 }
 
 h1, h2 {
-    color: #58697e;
+    color: $dark-color;
     font-family: $sans-font;
 }
 
@@ -62,11 +52,11 @@ h1, h2 {
 .paragraph {
     margin: auto;
     width: 30vw;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .footer {
-    background-color: #58697e;
+    background-color: $dark-color;
     position: absolute;
     bottom: 0;
     height: 5vh;
@@ -74,10 +64,11 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: $serif-font;
 }
 
 .footer p {
-    color: #ffffff;
+    color: $white;
     padding-left: .5vw;
 }
 
@@ -96,11 +87,16 @@ li img {
 }
 
 a {
-    font-family: 'Commissioner', serif;
-    color: #ffffff;
+    font-family: $serif-font;
+    color: $white;
     text-decoration: none;
+    padding: 0.625rem;
 }
 
 a:hover {
-    color: #58697e;
+    color: $dark-color;
+    border: solid 0.1875rem $white;
+    border-radius: 18.75rem;
+    background-color: $white;
+    color: $dark-color;
 }
